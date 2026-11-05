@@ -1,0 +1,24 @@
+package com.domed.api.util;
+
+import org.hibernate.dialect.Oracle10gDialect;
+import org.hibernate.type.StandardBasicTypes;
+
+import java.sql.Types;
+
+/**
+ * TODO
+ *
+ * @Description
+ * @Author lirong
+ * @Date 2023/8/15 10:44
+ **/
+public class MyOracleDialect extends Oracle10gDialect {
+    public MyOracleDialect() {
+        super();
+        registerHibernateType(Types.CHAR, StandardBasicTypes.STRING.getName());
+        registerHibernateType(Types.NVARCHAR, StandardBasicTypes.STRING.getName());
+        registerHibernateType(Types.LONGNVARCHAR, StandardBasicTypes.STRING.getName());
+        registerHibernateType(Types.DECIMAL, StandardBasicTypes.DOUBLE.getName());
+        registerHibernateType(Types.NCLOB, StandardBasicTypes.STRING.getName());
+    }
+}

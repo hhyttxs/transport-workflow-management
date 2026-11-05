@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: vehicle-local-test-server
+  main:
+    allow-bean-definition-overriding: false
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    open-in-view: false
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+  sql:
+    init:
+      mode: never
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:vehicle_local_test;MODE=Oracle;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: VEHICLE_LOCAL_TEST
+    password: ${VEHICLE_LOCAL_TEST_DB_PASSWORD:}
+    initialization-mode: never
+  h2:
+    console:
+      enabled: false
+server:
+  address: 127.0.0.1
+  port: 18092
+vehicle:
+  local-test:
+    enabled: ${VEHICLE_LOCAL_TEST_ENABLED:false}
+    key: ${VEHICLE_LOCAL_TEST_KEY:}
+    applicant-id: LVTEST_APPLICANT
+    preaccept-id: LVTEST_PRE_REVIEWER
+    accept-id: LVTEST_ACCEPT_REVIEWER
+    region: '210202'
+    department: TEST
+logging:
+  level:
+    root: INFO
+    org.hibernate: WARN

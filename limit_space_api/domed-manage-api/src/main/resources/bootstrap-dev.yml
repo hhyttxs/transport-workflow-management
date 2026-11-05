@@ -1,0 +1,22 @@
+server:
+  port: 8800
+
+spring:
+  application:
+    name: transport-manage-api
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+        namespace: ${NACOS_NAMESPACE:}
+        group: DEFAULT_GROUP_DEV
+      config:
+        server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+        file-extension: yaml
+        namespace: ${NACOS_NAMESPACE:}
+        group: DEFAULT_GROUP_DEV
+        prefix: ${spring.application.name} # 缺省即可
+        shared-configs[0]:
+          data-id: transport-common-dev.yaml
+          group: DEFAULT_GROUP_DEV
+          refresh: true

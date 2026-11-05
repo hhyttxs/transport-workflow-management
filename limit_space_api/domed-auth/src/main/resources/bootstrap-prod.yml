@@ -1,0 +1,23 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: transport-auth-api
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+        namespace: ${NACOS_NAMESPACE:}
+        group: DEFAULT_GROUP_OUT
+      config:
+        server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+        file-extension: yaml
+        namespace: ${NACOS_NAMESPACE:}
+        group: DEFAULT_GROUP_OUT
+        prefix: ${spring.application.name} # 缺省即可
+        shared-configs[0]:
+          data-id: transport-common-prod.yaml
+          group: DEFAULT_GROUP_OUT
+          refresh: true
+

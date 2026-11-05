@@ -1,0 +1,44 @@
+# Dependencies and generated outputs
+**/node_modules/
+**/target/
+**/dist/
+**/.cache/
+**/coverage/
+**/test-output/
+**/java-checks/
+**/.run/
+*.log
+hs_err_pid*
+replay_pid*
+*.class
+*.pyc
+__pycache__/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+# Local configuration and secret material
+.env.local
+.env.*.local
+**/application-local.yml
+**/bootstrap-local.yml
+*.jks
+*.keystore
+*.pem
+*.key
+*.p12
+*.pfx
+*.lic
+*.license
+# Archives and private provenance
+*.zip
+*.7z
+*.hprof
+.codex/
+
+# Local secret overrides
+**/.env.local
+**/.env.*.local
+**/application-*-local.yml
+**/bootstrap-*-local.yml
+tests/local-development/startup-refusal-results.json

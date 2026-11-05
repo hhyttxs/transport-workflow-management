@@ -1,0 +1,220 @@
+//add by shan
+body{
+
+}
+.login{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('../../assets/images/jttImages/bg-login.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .loginForm-personImg{
+    padding: 7px 7px;
+  }
+  //组件样式替换 begin
+  .ivu-input-prefix{
+    width: 46px;
+  }
+  .ivu-form-item {
+    border: 0px solid #E6E6E6;
+    margin-bottom: 46px;
+    vertical-align: top;
+    zoom: 1;
+  }
+  .ivu-input-with-prefix {
+    padding-left: 50px;
+  }
+  .ivu-input{
+    height: 48px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 55px;
+  }
+  .ivu-btn-primary{
+    color: #fff;
+    background-color: #15549a;
+    border-color: #15549a;
+  }
+  .ivu-btn-long {
+    width: 100%;
+    height: 50px;
+    border-radius: 22px;
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FEFCFB;
+    font-weight: bold;
+  }
+  .ivu-form-item-content {
+    position: relative;
+    line-height: 32px;
+    font-size: 12px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  //组件样式替换 end
+  .login-shelterLayer{
+    position:absolute;
+    top: 11%;
+    left:47.5%;
+    opacity: 0.65;
+    background-color: #fff;
+    width: 550px;
+    height: 495px;
+    margin-left: -230px;
+    z-index: 1;
+    border-radius: 15px;
+  }
+  .login-con{
+    position:absolute;
+    top: 16%;
+    left:48.4%;
+    width: 475px;
+    height: 400px;
+    margin-left: -210px;
+    z-index: 5;
+    .login-header{
+      width: 100%;
+      height: 50px;
+      margin-bottom: 66px;
+      .login-logo{
+        height: 100%;
+        width: 50px;
+        float: left;
+        margin-left: 20px;
+        .login-logo-img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .login-Name{
+        height: 100%;
+        float: left;
+        margin-left: 5%;
+        .login-Name-title{
+          height: 50%;
+          color: #15549a;
+          font-weight: bold;
+          font-size: 23px;
+          line-height: 28px;
+        }
+        .login-Name-Name{
+          height: 50%;
+          font-weight: bold;
+          color: #ACAEB0;
+          font-size: 15px;
+          line-height: 25px;
+        }
+        img {
+          width: 389px;
+        }
+      }
+    }
+  }
+
+  .login-class :hover {
+    border-color: #2d8cf0;
+  }
+  .login-class:focus {
+    border-color: #2d8cf0;
+  }
+  .formItem{
+    position: relative;
+    img{
+      position: absolute;
+      z-index: 6;
+      top: 13px;
+      left: 18px;
+    }
+  }
+  .login-class {
+    border-radius: 5px;  /*设置圆角半径*/
+    height: 35px ;     /*input高度*/
+  }
+  .ivu-form-item-error-tip {
+    position: absolute;
+    line-height: 22px;
+    min-width: 12px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    background-color: #ff784e;
+    color: #fff;
+    z-index: 999;
+    -webkit-margin-end: auto;
+    margin-inline-end: auto;
+    margin-top: 10px;
+  }
+
+  .ivu-form-item-error-tip:before {
+    content: "";
+    top: -20px;
+    position: absolute;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 10px transparent dashed;
+    border-left: 10px transparent dashed;
+    border-right: 0px transparent dashed;
+    border-bottom: 10px #ff784e solid;
+  }
+}
+
+.logleft {
+  float: left;
+  width: 65%;
+  height: 600px;
+  background: url('../../assets/images/jttImages/bg-login2.jpg');
+  background-size: 100%;
+  h1 {
+    padding-top: 50px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 42px;
+    line-height: 60px;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  h2 {
+    padding-top: 20px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 500;
+  }
+}
+.logright {
+  float: left;
+  width: 35%;
+  height: 600px;
+  background: rgba(255,255,255, 0.5);
+}
+.logintit {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 70px;
+  span {
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #345efe;
+    margin: 20px auto;
+  }
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.loginbox {
+  //margin: 8% auto 0;
+  padding-top: 8%;
+  margin: auto;
+  overflow: hidden;
+}

@@ -1,0 +1,75 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"SF Pro SC","SF Pro Text","Helvetica Neue",Helvetica,"PingFang SC","Segoe UI",Roboto,"Hiragino Sans GB",'arial','microsoft yahei ui',"Microsoft YaHei",SimSun,sans-serif;
+  color: #324057;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+}
+ul, ol, li {
+  list-style: none;
+}
+a{
+  color: @main-color;
+}
+a:active {
+  color: @main-color;
+}
+a:hover {
+  color: @main-color;
+}
+// @main-color:#334a73;
+@main-title-color: #191a23;
+@main-color:none;
+@button-hover:#5cadff;
+@hover_color:#2d8cf0;
+@shadow:0 0 0 2px rgba(51, 74, 115, 0.2);
+@validate_color:#ff784e;
+.ivu-input[disabled], fieldset[disabled] .ivu-input {
+    height: 36px !important;
+    color: #515a6e;
+}
+.ivu-notice{
+    z-index: 99999999!important;
+}
+.ivu-input-large, .ivu-btn-large, .ivu-select-large, .ivu-select, .ivu-select-placeholder, .ivu-select-selection, .ivu-select-selected-value{
+  font-size: 14px !important;
+  min-height: 36px;
+  line-height: none;
+  box-sizing: border-box;
+}
+.inputBoxWrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.rxTreeBox{
+  padding: 0 15px 0 10px;
+  box-sizing: border-box;
+}
+.pageBoxWrap{
+  height: 99%;
+}
+.ivu-table:before{
+  height: 0 !important;
+}
+.ivu-table-wrapper-with-border{
+  border-bottom: none !important;
+}
+
+.ivu-select-selected-value, .ivu-checkbox-large{
+  font-size: 14px !important;
+}
+
+.ivu-select-single .ivu-select-selection , .ivu-select-single .ivu-select-selection .ivu-select-selected-value{
+  color: black !important;
+}
+
+.ivu-input-number-input[disabled]{
+  color: black;
+}
+
+.ivu-select-multiple .ivu-tag {
+  font-size: medium
+}

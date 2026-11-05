@@ -1,0 +1,65 @@
+<template>
+
+  <Drawer v-model="drawerFlag" width="640">
+    <!--上方 标题栏 开始-->
+    <div slot="header" class="domed-drawer-title" >
+      <div class="domed-drawer-title-text">查看</div>
+    </div>
+    <!--上方 标题栏 结束-->
+    <!--关闭按钮 开始-->
+    <div slot="close">
+      <Icon type="md-close" class="domed-drawer-close-icon" size="24" color="white"></Icon>
+    </div>
+    <!--关闭按钮 结束-->
+
+    <slot name="content">
+      这是默认的内容
+    </slot>
+  </Drawer>
+</template>
+
+<script>
+export default {
+    name: "rongxun-drawer",
+    data(){
+      return {
+        drawerFlag:false,
+      }
+    },
+    methods:{
+      show(){
+        this.drawerFlag=true;
+      }
+    }
+
+}
+</script>
+
+<style>
+  .domed-drawer-title{
+    background:rgba(51,74,115,1);
+    height:40px;
+    border-top-left-radius:2em;
+  }
+  .domed-drawer-title-text{
+    font-size:18px;
+    font-family:Microsoft YaHei;
+    font-weight:300;
+    color:rgba(255,255,255,1);
+    padding-left: 23px;
+    padding-top: 13px;
+  }
+  .ivu-drawer-header {
+    border-bottom: 1px solid #e8eaec;
+    padding: 0px 0px;
+    line-height: 1;
+  }
+  .ivu-drawer-right{
+    margin-top: 25px;
+  }
+  .ivu-drawer-content{
+    border-top-left-radius:2em;
+  }
+  .domed-drawer-close-icon{
+  }
+</style>
